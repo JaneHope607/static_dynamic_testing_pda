@@ -27,7 +27,7 @@ def self.cards_total(cards) # incorrect indentation
   total # total needs to be assigned a value - shouls have = and then a value
   for card in cards
     total += card.value
-    return "You have a total of" + total # The return statement should be outside of the for loop or it will print every time the loop runs. Total needs .to_s to change it to a sting as well.
+    return "You have a total of" + total # The return statement should be outside of the for loop or it will print every time the loop runs. Total needs .to_s to change it to a sting as well. There should also be a space after of otherwise it will read "You have a total of14"
   end
 end
 
