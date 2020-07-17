@@ -6,41 +6,29 @@
 
 class CardGame
 
-  def checkforAce(card)
-    if card.value = 1
+  def checkforAce(card) # The ace should not be capitalized and there should be underscores between each word
+    if card.value = 1 # There should be two equal signs instead of one, which checks if card is equal to 1
       return true
     else
       return false
     end
   end
 
-  # The ace should not be capitalized 
-  # There should be two equal signs instead of 1
-
-  dif highest_card(card1 card2)
-  if card1.value > card2.value
-    return card
+  dif highest_card(card1 card2) # It should say def not dif and there should be a comma between the two arguments in the parenthesis
+  if card1.value > card2.value # Indentation is incorrect for lines 18 - 23
+    return card # It should say 'return card1' instead of 'card' - card is not a variable in this function
   else
     return card2
   end
 end
-end
+end # This 'end' should not be here - this would end the and also the incorrect indentation
 
-# It should say def not dif 
-# There should be a comma between the two arguments in the parenthesis
-# There is one too many 'end' and there is also the incorrect indentation
-# It should say 'return card1' instead of just 'card'
-
-def self.cards_total(cards)
-  total
+def self.cards_total(cards) # incorrect indentation
+  total # total needs to be assigned a value - shouls have = and then a value
   for card in cards
     total += card.value
-    return "You have a total of" + total
+    return "You have a total of" + total # The return statement should be outside of the for loop or it will print every time the loop runs. Total needs .to_s to change it to a sting as well.
   end
 end
-
-# There should not be a . on the first line
-# the total should say 'total = 0'
-# There should be string interpolation on the return line - should say 'return "You have a total of #{total}"'
 
 ```
